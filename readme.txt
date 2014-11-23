@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: stephen.punwasi
+Contributors: stephen.punwasi, parkwest
 Tags: Asychronous, Performace, JavaScript, SEO
 Requires at least: 3.0.1
 Tested up to: 4.1
@@ -39,19 +39,26 @@ you put the stable version, in order to eliminate any doubt.
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Upload the whole 'wp-javascript-defer' folder to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Enjoy! Test to make sure your rendering hasn't been affected.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How Does This Improve SEO ?=
 
-An answer to that question.
+Site speed is one of the many ranking factors that determine search results. By
+loading your JavaScript asynchronously, the parsing of the DOM won't be affected
+by pausing to load your JavaScript files. Nerd to English translation: Your
+scripts get loaded at the same time as your page. Sweet, right? 
 
-= What about foo bar? =
+= Will This Improve Every Site? =
 
-Answer to foo bar dilemma.
+//Test Results From Testing
+
+A small number of sites that depend on JavaScript for rendering the initial view
+may not have the intended result. As with any plugin, click around and make sure
+everything looks and works as intended.
 
 == Screenshots ==
 
