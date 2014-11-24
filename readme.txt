@@ -1,8 +1,8 @@
 === Plugin Name ===
-Contributors: stephen.punwasi, parkwest
-Tags: Asychronous, Performace, JavaScript, SEO
+Contributors: stephen.punwasi, parkwest creative
+Tags: Performace, JavaScript, SEO, Defer
 Requires at least: 3.0.1
-Tested up to: 4.1
+Tested up to: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,9 +48,9 @@ This section describes how to install the plugin and get it working.
 = How Does This Improve SEO ?=
 
 Site speed is one of the many ranking factors that determine search results. By
-loading your JavaScript asynchronously, the parsing of the DOM won't be affected
-by pausing to load your JavaScript files. Nerd to English translation: Your
-scripts get loaded at the same time as your page. Sweet, right? 
+defering your JavaScript loading, the parsing of the DOM won't be affected by js
+files. Nerd to English translation: Your scripts get downloaded at the same time
+as your html, and executed only when your html has been rendered. Cool, right?
 
 = Will This Improve Every Site? =
 
@@ -70,26 +70,10 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
+= 0.1 =
 * List versions from most recent at top to oldest at bottom.
 
 == Upgrade Notice ==
-
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
 
 == A brief Markdown Example ==
 
@@ -107,11 +91,3 @@ Unordered list:
 
 Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
 Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
